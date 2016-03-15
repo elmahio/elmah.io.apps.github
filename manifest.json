@@ -1,0 +1,36 @@
+{
+	"variables": [{
+		"key": "token",
+		"name": "Token",
+		"description": "An access token from GitHub needed to call the GitHub API",
+		"example": "1b46dce67scfc49fhd57f20baj50d7a1dd88e29a",
+		"type": "text",
+		"required": true
+	},{
+		"key": "owner",
+		"name": "Owner",
+		"description": "The user or organization to create the new issue on",
+		"example": "aspnet",
+		"type": "text",
+		"required": true
+	},{
+		"key": "repo",
+		"name": "Repository",
+		"description": "The repository to create the new issue on",
+		"example": "Mvc",
+		"type": "text",
+		"required": true
+	}],
+	"rule": {
+		"title": "Create a new issue in GitHub on all errors",
+		"query": "isNew:true AND (severity:Error OR severity:Fatal)",
+		"then": {
+			"type": "http",
+			"url": "https://api.github.com/repos/$owner/$repo/issues?access_token=$token",
+			"method": "post",
+			"body": "{ \"title\":\"$message\", \"body\": \"Time: $time\r\nURL: $url\r\nHostname: $hostName\r\nStatus Code: $statusCode\r\nType: $type\r\nSource: $source\r\nUser: $user\"}",
+			"contentType": "application/json"
+			
+		}
+	}
+}

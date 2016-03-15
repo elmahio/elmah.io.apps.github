@@ -1,2 +1,1 @@
-# elmah.io.apps.github
-Integrates GitHub with elmah.io
+# GitHub integration for elmah.ioIntegrates GitHub with elmah.io. To install the integration, go to the Apps tab on your log settings and add this app.
