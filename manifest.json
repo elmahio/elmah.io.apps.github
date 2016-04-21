@@ -28,7 +28,7 @@
 			"type": "http",
 			"url": "https://api.github.com/repos/$owner/$repo/issues?access_token=$token",
 			"method": "post",
-			"body": "{ \"title\":\"$message\", \"body\": \"Time: $time<br/>URL: $url<br/>Hostname: $hostName<br/>Status Code: $statusCode<br/>Type: $type<br/>Source: $source<br/>User: $user\"}",
+			"body": "{ \"title\":\"$message\", \"body\": \"Time: $time\r\nURL: $url\r\nHostname: $hostName\r\nStatus Code: $statusCode\r\nType: $type\r\nSource: $source\r\nUser: $user\"}",
 			"contentType": "application/json"
 			
 		}
