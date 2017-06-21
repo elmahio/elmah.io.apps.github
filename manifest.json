@@ -29,8 +29,8 @@
 			"url": "https://api.github.com/repos/$owner/$repo/issues?access_token=$token",
 			"method": "post",
 			"body": "{ \"title\":\"$message\", \"body\": \"Time: $time\\nURL: $url\\nHostname: $hostName\\nStatus Code: $statusCode\\nType: $type\\nSource: $source\\nUser: $user\"}",
-			"contentType": "application/json"
-			
+			"contentType": "application/json",
+			"testUrl": "https://api.github.com/repos/$owner/$repo?access_token=$token"
 		}
 	}
 }
