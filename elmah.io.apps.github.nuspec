@@ -10,7 +10,7 @@
     <description>Create a new issue in GitHub when a new error is logged on elmah.io.</description>
     <projectUrl>https://github.com/elmahio/elmah.io.apps.github</projectUrl>
     <iconUrl>https://elmah.io/images/appstore/elmah.io.apps.github.png</iconUrl>
-	<tags>Error Exception Reporing Management Logging ELMAH Diagnostics Tracing GitHub</tags>
+	<tags>Error Exception Reporting Management Logging ELMAH Diagnostics Tracing GitHub</tags>
   </metadata>
   <files>
     <file src="manifest.json" target="manifest.json" />
