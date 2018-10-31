@@ -4,7 +4,7 @@
 		"name": "Token",
 		"description": "An access token from GitHub needed to call the GitHub API",
 		"example": "1b46dce67scfc49fhd57f20baj50d7a1dd88e29a",
-		"type": "text",
+		"type": "password",
 		"required": true
 	},{
 		"key": "owner",
