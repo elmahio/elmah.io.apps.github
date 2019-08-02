@@ -8,7 +8,8 @@
     <title>GitHub Integration</title>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Create a new issue in GitHub when a new error is logged on elmah.io.</description>
-    <projectUrl>https://github.com/elmahio/elmah.io.apps.github</projectUrl>
+    <projectUrl>https://elmah.io/</projectUrl>
+    <repository type="git" url="https://github.com/elmahio/elmah.io.apps.github" />
     <iconUrl>https://elmah.io/images/appstore/elmah.io.apps.github.png</iconUrl>
 	<tags>Error Exception Reporting Management Logging ELMAH Diagnostics Tracing GitHub</tags>
   </metadata>
