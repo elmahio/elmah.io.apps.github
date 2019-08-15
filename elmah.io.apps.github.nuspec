@@ -6,12 +6,13 @@
     <owners>elmah.io</owners>
     <id>elmah.io.apps.github</id>
     <title>GitHub Integration</title>
+    <license type="expression">Apache-2.0</license>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Create a new issue in GitHub when a new error is logged on elmah.io.</description>
     <projectUrl>https://elmah.io/</projectUrl>
     <repository type="git" url="https://github.com/elmahio/elmah.io.apps.github" />
     <iconUrl>https://elmah.io/images/appstore/elmah.io.apps.github.png</iconUrl>
-	<tags>Error Exception Reporting Management Logging ELMAH Diagnostics Tracing GitHub</tags>
+    <tags>Error Exception Reporting Management Logging ELMAH Diagnostics Tracing GitHub</tags>
   </metadata>
   <files>
     <file src="manifest.json" target="manifest.json" />
