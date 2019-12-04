@@ -24,7 +24,7 @@
 	}],
 	"rule": {
 		"title": "Create a new issue in GitHub on all errors",
-		"query": "isNew:true AND (severity:Error OR severity:Fatal)",
+		"query": "isNew:true AND (severity:Error OR severity:Fatal) AND NOT isUptime:true AND NOT isHeartbeat:true",
 		"then": {
 			"type": "http",
 			"url": "https://api.github.com/repos/$owner/$repo/issues?access_token=$token",
